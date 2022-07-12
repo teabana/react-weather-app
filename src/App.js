@@ -29,11 +29,12 @@ function App() {
       });
   };
   return (
-    <div className="App">
-      <h1>こんにちは</h1>
-      <Title />
-      <Form setCity={setCity} getWether={getWether}/>
-      <Results results={results}/>
+    <div className="wrapper">
+      <div className="container">
+        <Title />
+        <Form setCity={setCity} getWether={getWether}/>
+        <Results results={results}/>
+      </div>
     </div>
   );
 }
